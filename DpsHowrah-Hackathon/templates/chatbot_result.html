@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>The response will appear here: </h1><br>
+
+{% if feedback %}
+    <p>{{ feedback }}</p>
+{% endif %}
+<br>
+<form action = "http://127.0.0.1:5000/student/chatbot_result" method="POST">
+<button type="submit">Return</button>
+</form>
+
+</body>
+</html>
